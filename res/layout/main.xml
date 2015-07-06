@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/RelativeLayout1" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@color/white">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageView2" android:layout_centerHorizontal="true" android:layout_marginTop="10dp" android:background="@drawable/logo"></ImageView>
+	<LinearLayout android:layout_alignParentLeft="true" android:id="@+id/linearLayout2"
+		android:layout_width="fill_parent" android:background="@color/blue"
+		android:layout_height="50dp" android:orientation="horizontal" android:layout_below="@+id/imageView2" android:layout_marginTop="5dp">
+		<RelativeLayout android:layout_alignBaseline="@+id/RelativeLayout1" android:id="@+id/RelativeLayout1"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_weight="1" android:paddingLeft="10dp">
+			<ImageView android:id="@+id/imageView1" android:background="@drawable/icon_search" android:layout_height="25dp" android:layout_width="25dp" android:layout_centerVertical="true" android:layout_marginLeft="5dp"></ImageView>
+			<EditText android:layout_centerVertical="true" android:id="@+id/searchEditText"
+				android:layout_width="fill_parent" android:layout_height="40dp" android:background="@drawable/box" android:hint="Video Name" android:paddingLeft="35dp" android:textColor="@color/black" android:singleLine="true"></EditText>
+		</RelativeLayout>
+		<LinearLayout android:id="@+id/linearLayout4"
+			android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2" android:paddingLeft="10dp" android:paddingRight="10dp">
+			<Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Search" android:textColor="@color/white" android:typeface="serif" android:background="@drawable/rectbtn_selector" android:layout_gravity="center_vertical" android:id="@+id/searchbtn"></Button>
+		</LinearLayout>
+	</LinearLayout>
+	<ListView android:layout_below="@+id/linearLayout2" android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_marginBottom="10dp" android:id="@+id/listView" android:cacheColorHint="@android:color/transparent" android:layout_above="@+id/progressBar"></ListView>
+	<ProgressBar style="?android:attr/progressBarStyleHorizontal" android:id="@+id/progressBar" android:layout_above="@+id/linearLayout3" android:layout_width="fill_parent" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:layout_height="10dp" android:max="100"></ProgressBar>
+	<LinearLayout android:id="@+id/linearLayout3" android:layout_height="50dp" android:layout_width="fill_parent" android:layout_alignParentBottom="true" android:paddingLeft="20dp" android:paddingRight="20dp">
+		<Button android:layout_width="fill_parent" android:text="Download" android:textColor="@color/white" android:typeface="serif" android:layout_weight="1" android:layout_marginRight="10dp" android:background="@drawable/rectbtn_selector" android:layout_height="40dp" android:id="@+id/downloadbtn"></Button>
+		<Button android:layout_width="fill_parent" android:text="Convert" android:textColor="@color/white" android:typeface="serif" android:layout_weight="1" android:layout_marginLeft="10dp" android:background="@drawable/rectbtn_selector" android:layout_height="40dp" android:id="@+id/convertbtn"></Button>
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- about_items 里的一些颜色定义 -->
+
+	<!-- view_request 里的一些颜色定义 -->
+
+	<!-- item_detials 里的一些颜色定义 -->
+	<!-- news_items里的用到的颜色 -->
+
+	<color name="white">#ffffff</color>
+	<color name="black">#000000</color>
+	<color name="blue">#75afeb</color>
+</resources>
